@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Base } from './Base'
 
 ReactDOM.render(
   <React.StrictMode>
     <div>
-      <p>Bundle</p>
+      <Base/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')
