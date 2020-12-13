@@ -33,9 +33,9 @@ export const MonthPicker = (props: MonthPickerProps): JSX.Element => {
       <table className={isShow ? 'active' : 'inactive'}>
         <thead>
         <tr>
-          <th onClick={_e => setYear(year - 1)}>{'<'}</th>
+          <th className='arrow' onClick={_e => setYear(year - 1)}>{'<'}</th>
           <th>{year}</th>
-          <th onClick={_e => setYear(year + 1)}>{'>'}</th>
+          <th className='arrow' onClick={_e => setYear(year + 1)}>{'>'}</th>
         </tr>
         </thead>
 
@@ -81,18 +81,23 @@ export const MonthPicker = (props: MonthPickerProps): JSX.Element => {
           margin: 1rem 0;
         }
         
-        th:first-child:hover,
-        th:last-child:hover,
-        td:hover {
+        .arrow:hover, td:hover {
           background-color: #f5f3f3;
         }
         
         th, td {
-          padding: .5rem 1rem;
           text-align: center;
         }
         
-        th:first-child, th:last-child, td {
+        th {
+          padding: .75rem 1rem;
+        }
+        
+        td {
+          padding: .5rem 1rem;
+        }
+        
+        .arrow, td {
           cursor: pointer;
         }
       `}</style>
