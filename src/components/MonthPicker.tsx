@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react'
+import { YearAndMonth } from '../types/YearAndMonth'
 
 interface MonthPickerProps {
-  handleChange: (yearAndMonth: string) => void
+  handleChange: (yearAndMonth: YearAndMonth) => void
+  defaultValue: YearAndMonth
 }
 
 export const MonthPicker = (props: MonthPickerProps): JSX.Element => {
   const [isShow, setIsShow] = useState(false)
-  const [year, setYear] = useState(2020)
-  const [month, setMonth] = useState(12)
+  const [year, setYear] = useState(parseInt(props.defaultValue.year))
+  const [month, setMonth] = useState(parseInt(props.defaultValue.month))
 
   useEffect(() => {
-    props.handleChange(`${year}-${month}`)
+    props.handleChange(YearAndMonth.fromString(`${year}-${month}`))
   }, [year, month])
 
   function changeMonth(month: number) {
