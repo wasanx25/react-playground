@@ -15,7 +15,7 @@ export const MonthPicker = (props: MonthPickerProps): JSX.Element => {
     props.handleChange(YearAndMonth.fromString(`${year}-${month}`))
   }, [year, month])
 
-  function changeMonth(month: number) {
+  function changeMonth (month: number) {
     setMonth(month)
     setIsShow(false)
   }
@@ -66,17 +66,18 @@ export const MonthPicker = (props: MonthPickerProps): JSX.Element => {
       <style jsx>{`
         .active {
           opacity: 1;
+          visibility: visible;
         }
         
         .inactive {
           opacity: 0;
+          visibility: hidden;
         }
 
         table {
           position: absolute;
           z-index: 100;
-          transition-property: opacity;
-          transition-duration: .5s;
+          transition: opacity 600ms, visibility 600ms;
           background-color: #ffffff;
           margin: 1rem 0;
         }
