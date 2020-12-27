@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MonthPicker sample 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 100;
+  -webkit-transition: opacity 600ms,visibility 600ms;
+  transition: opacity 600ms,visibility 600ms;
+  background-color: #ffffff;
+  margin: 1rem 0;
+}
+
+.c0.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.c0.inactive {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.c0 .arrow:hover,
+.c0 td:hover {
+  background-color: #f5f3f3;
+}
+
+.c0 th,
+.c0 td {
+  text-align: center;
+}
+
+.c0 th {
+  padding: .75rem 1rem;
+}
+
+.c0 td {
+  padding: .5rem 1rem;
+}
+
+.c0 .arrow,
+.c0 td {
+  cursor: pointer;
+}
+
+<table
+  class="c0 inactive"
+  role="month-picker-table"
+>
+  <thead>
+    <tr>
+      <th
+        class="arrow"
+      >
+        &lt;
+      </th>
+      <th>
+        2020
+      </th>
+      <th
+        class="arrow"
+      >
+        &gt;
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        1
+        月
+      </td>
+      <td>
+        2
+        月
+      </td>
+      <td>
+        3
+        月
+      </td>
+    </tr>
+    <tr>
+      <td>
+        4
+        月
+      </td>
+      <td>
+        5
+        月
+      </td>
+      <td>
+        6
+        月
+      </td>
+    </tr>
+    <tr>
+      <td>
+        7
+        月
+      </td>
+      <td>
+        8
+        月
+      </td>
+      <td>
+        9
+        月
+      </td>
+    </tr>
+    <tr>
+      <td>
+        10
+        月
+      </td>
+      <td>
+        11
+        月
+      </td>
+      <td>
+        12
+        月
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
