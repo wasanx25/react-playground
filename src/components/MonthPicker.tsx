@@ -1,49 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { YearAndMonth } from '../types/YearAndMonth'
-import styled from '@emotion/styled'
+import { Table } from './StyledTable'
 
 interface MonthPickerProps {
   handleChange: (yearAndMonth: YearAndMonth) => void
   defaultValue: YearAndMonth
 }
-
-const Table = styled.table`
-  position: absolute;
-  z-index: 100;
-  transition: opacity 600ms, visibility 600ms;
-  background-color: #ffffff;
-  margin: 1rem 0;
-
-  &.active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  &.inactive {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .arrow:hover, td:hover {
-    background-color: #f5f3f3;
-  }
-
-  th, td {
-    text-align: center;
-  }
-
-  th {
-    padding: .75rem 1rem;
-  }
-
-  td {
-    padding: .5rem 1rem;
-  }
-
-  .arrow, td {
-    cursor: pointer;
-  }
-`
 
 export const MonthPicker = (props: MonthPickerProps): JSX.Element => {
   const [isShow, setIsShow] = useState(false)
