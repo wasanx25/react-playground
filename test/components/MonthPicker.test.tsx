@@ -2,7 +2,6 @@ import React from 'react'
 import { render } from '@testing-library/react'
 import { MonthPicker } from '../../src/components/MonthPicker'
 import { YearAndMonth } from '../../src/types/YearAndMonth'
-import 'jest-styled-components'
 import '@testing-library/jest-dom/extend-expect'
 
 describe('MonthPicker', () => {

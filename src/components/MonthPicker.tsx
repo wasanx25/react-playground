@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { YearAndMonth } from '../types/YearAndMonth'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 interface MonthPickerProps {
   handleChange: (yearAndMonth: YearAndMonth) => void
