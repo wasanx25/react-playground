@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode=production",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "test": "jest"
   },
   "dependencies": {
     "@emotion/react": "^11.1.4",
