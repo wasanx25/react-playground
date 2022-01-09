@@ -7,6 +7,7 @@ describe('SampleTable', () => {
     test('sample', () => {
         const { getByRole } = render(<SampleTable/>)
 
-        expect(getByRole('rowheader', { name: 'Group1' })).toBeVisible()
+        // TODO: Like bug https://github.com/testing-library/dom-testing-library/issues/930
+        expect(getByRole('columnheader', { name: 'Group1' })).toBeVisible()
     })
 })

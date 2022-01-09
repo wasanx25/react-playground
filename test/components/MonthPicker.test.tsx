@@ -5,7 +5,7 @@ import { YearAndMonth } from '../../src/types/YearAndMonth'
 import '@testing-library/jest-dom/extend-expect'
 
 describe('MonthPicker', () => {
-  test('sample', () => {
+  test.skip('sample', () => {
     const {getByRole} = render(<MonthPicker handleChange={jest.fn()} defaultValue={YearAndMonth.now()}/>)
 
     const expected = [
