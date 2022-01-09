@@ -13,6 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "types": ["react/next", "react-dom/next"],
     "jsx": "react"
   },
   "include": ["src"]
