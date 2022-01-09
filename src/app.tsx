@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Base } from './Base'
+import React from "react";
+import ReactDOM from "react-dom";
+import { Base } from "./Base";
 
 ReactDOM.render(
   <React.StrictMode>
     <div>
-      <Base/>
+      <Base />
     </div>
   </React.StrictMode>,
-  document.getElementById('root')
-)
+  document.getElementById("root")
+);
