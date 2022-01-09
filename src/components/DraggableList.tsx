@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledDraggableList } from "./StyledDraggableList";
+import { StyledDraggableList } from "./styled/StyledDraggableList";
 
 const DRAGGABLE_LIST_ID = "item-list";
 const DATA_TRANSFER_ID = "item-id";
@@ -53,7 +53,7 @@ export const DraggableList = (): JSX.Element => {
           onDrop={drop}
           onDragOver={dragOver}
           onDragLeave={dragLeave}
-        ></li>
+        />
       </StyledDraggableList>
     </>
   );

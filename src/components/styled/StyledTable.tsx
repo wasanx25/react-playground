@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const Table = styled.table({
+export const StyledTable = styled.table({
   position: "absolute",
   zIndex: 100,
   transition: "opacity 600ms, visibility 600ms",

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { YearAndMonth } from "../types/YearAndMonth";
-import { Table } from "./StyledTable";
+import { StyledTable } from "./styled/StyledTable";
 
 interface MonthPickerProps {
   handleChange: (yearAndMonth: YearAndMonth) => void;
@@ -32,7 +32,7 @@ export const MonthPicker = (props: MonthPickerProps): JSX.Element => {
         readOnly
       />
 
-      <Table
+      <StyledTable
         role="month-picker-table"
         className={isShow ? "active" : "inactive"}
       >
@@ -86,7 +86,7 @@ export const MonthPicker = (props: MonthPickerProps): JSX.Element => {
             })}
           </tr>
         </tbody>
-      </Table>
+      </StyledTable>
     </>
   );
 };
